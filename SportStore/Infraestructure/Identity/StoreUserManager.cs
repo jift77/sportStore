@@ -1,35 +1,22 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin;
 
 namespace SportStore.Infraestructure.Identity
 {
-    internal class StoreUserManager
+    public class StoreUserManager : UserManager<StoreUser>
     {
-        private UserStore<StoreUser> userStore;
-
-        public StoreUserManager(UserStore<StoreUser> userStore)
+        public StoreUserManager(IUserStore<StoreUser> userStore) : base(userStore)
         {
-            this.userStore = userStore;
         }
 
-        internal StoreUser FindByName(string userName)
+        public static StoreUserManager Create(IdentityFactoryOptions<StoreUserManager> options, IOwinContext context)
         {
-            throw new NotImplementedException();
-        }
+            StoreIdentityDbContext dbContext = context.Get<StoreIdentityDbContext>();
+            StoreUserManager manager = new StoreUserManager(new UserStore<StoreUser>(dbContext));
 
-        internal void Create(StoreUser storeUser, string passWord)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal bool IsInRole(string id, string roleName)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void AddToRole(string id, string roleName)
-        {
-            throw new NotImplementedException();
+            return manager;
         }
     }
 }

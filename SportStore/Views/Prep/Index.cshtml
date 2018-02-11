@@ -5,6 +5,12 @@
 }
 
 <div class="panel panel-primary">
+    @Html.ActionLink("SignIn", "SignIn", "Prep", new { @class = "btn btn-sm btn-primary" })
+    @Html.ActionLink("SignOut", "SignOut", "Prep", new { @class = "btn btn-sm btn-primary" })
+    User: @(HttpContext.Current.User.Identity.Name)
+</div>
+
+<div class="panel panel-primary">
     <div class="panel-heading">
         Products
     </div>

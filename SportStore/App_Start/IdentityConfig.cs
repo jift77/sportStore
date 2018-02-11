@@ -1,7 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using Owin;
 using Microsoft.Owin;
-using Owin;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security.Cookies;
+using SportStore.Infraestructure.Identity;
 
 [assembly: OwinStartup(typeof(SportStore.App_Start.IdentityConfig))]
 
@@ -11,7 +12,11 @@ namespace SportStore.App_Start
     {
         public void Configuration(IAppBuilder app)
         {
-            // Para obtener más información sobre cómo configurar la aplicación, visite https://go.microsoft.com/fwlink/?LinkID=316888
+            app.CreatePerOwinContext<StoreIdentityDbContext>(StoreIdentityDbContext.Create);
+            app.CreatePerOwinContext<StoreUserManager>(StoreUserManager.Create);
+            app.CreatePerOwinContext<StoreRoleManager>(StoreRoleManager.Create);
+
+            //app.UseCookieAuthentication(new CookieAuthenticationOptions { AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie });
         }
     }
 }

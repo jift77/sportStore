@@ -1,25 +1,19 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin;
 
 namespace SportStore.Infraestructure.Identity
 {
-    internal class StoreRoleManager
+    internal class StoreRoleManager : RoleManager<StoreRole>
     {
-        private RoleStore<StoreRole> roleStore;
-
-        public StoreRoleManager(RoleStore<StoreRole> roleStore)
+        public StoreRoleManager(RoleStore<StoreRole> roleStore) : base(roleStore)
         {
-            this.roleStore = roleStore;
         }
 
-        internal bool RoleExists(string roleName)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void Create(StoreRole storeRole)
-        {
-            throw new NotImplementedException();
-        }
+        public static StoreRoleManager Create(IdentityFactoryOptions<StoreRoleManager> options, IOwinContext context) =>
+        (
+             new StoreRoleManager(new RoleStore<StoreRole>(context.Get<StoreIdentityDbContext>()))
+        );
     }
 }
