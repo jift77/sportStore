@@ -1,0 +1,34 @@
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity;
+
+namespace SportStore.Infraestructure.Identity
+{
+    public class StoreIdentityDbInitalizer : CreateDatabaseIfNotExists<StoreIdentityDbContext>
+    {
+        protected override void Seed(StoreIdentityDbContext context)
+        {
+            StoreUserManager userMgr = new StoreUserManager(new UserStore<StoreUser>(context));
+
+            StoreRoleManager roleMgr = new StoreRoleManager(new RoleStore<StoreRole>(context));
+
+            string roleName = "Administrators";
+            string userName = "Admin";
+            string passWord = "secret";
+            string email = "admin@example.com";
+
+            if (!roleMgr.RoleExists(roleName)) roleMgr.Create(new StoreRole(roleName));
+
+            StoreUser user = userMgr.FindByName(userName);
+            if (user == null)
+            {
+                userMgr.Create(new StoreUser { UserName = userName, Email = email }, passWord);
+                user = userMgr.FindByName(userName);
+            }
+
+            if (!userMgr.IsInRole(user.Id, roleName)) userMgr.AddToRole(user.Id, roleName);
+
+            base.Seed(context);
+        }
+    }
+}
