@@ -120,3 +120,5 @@ C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStor
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csproj.CoreCompileInputs.cache
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.pdb
+C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
