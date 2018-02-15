@@ -121,4 +121,3 @@ C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\es\System.Web.H
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csproj.CoreCompileInputs.cache
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.pdb
-C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csprojResolveAssemblyReference.cache

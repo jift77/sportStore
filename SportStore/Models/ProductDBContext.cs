@@ -8,7 +8,7 @@ namespace SportStore.Models
 {
     public class ProductDBContext : DbContext
     {
-        public ProductDBContext() : base("SportStoreDB") {
+        public ProductDBContext() : base("SportStoreDb") {
             Database.SetInitializer<ProductDBContext>(new ProductDbInitializer());
         }
 

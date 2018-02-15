@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="SportsStoreDb-Web.config Connection String" description="SportsStoreDb Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(localdb)\v11.0;Initial Catalog=SportsStoreDb;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\georg\\source\\repos\\SportStore\\sportStore\\SportStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SportsStoreDb']/@connectionString" />
+  <parameter name="SportStoreDb-Web.config Connection String" description="SportStoreDb Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(localdb)\v11.0;Initial Catalog=SportsStoreDb;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\georg\\source\\repos\\SportStore\\sportStore\\SportStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SportStoreDb']/@connectionString" />
   </parameter>
-  <parameter name="SportsStoreIdentityDb-Web.config Connection String" description="SportsStoreIdentityDb Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=SportsStoreIdentityDb;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\georg\\source\\repos\\SportStore\\sportStore\\SportStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SportsStoreIdentityDb']/@connectionString" />
-  </parameter>
-  <parameter name="SportStoreDB-Web.config Connection String" description="SportStoreDB Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="SportStoreDB_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\georg\\source\\repos\\SportStore\\sportStore\\SportStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SportStoreDB']/@connectionString" />
-  </parameter>
-  <parameter name="SportStoreIdentityDb-Web.config Connection String" description="SportStoreIdentityDb Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="SportStoreIdentityDb_ConnectionString" tags="SqlConnectionString">
+  <parameter name="SportStoreIdentityDb-Web.config Connection String" description="SportStoreIdentityDb Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(localdb)\v11.0;Initial Catalog=SportsStoreIdentityDb;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\georg\\source\\repos\\SportStore\\sportStore\\SportStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SportStoreIdentityDb']/@connectionString" />
   </parameter>
 </parameters>
