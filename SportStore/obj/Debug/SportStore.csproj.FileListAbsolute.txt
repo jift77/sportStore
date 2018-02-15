@@ -58,6 +58,8 @@ C:\Users\georg\source\repos\SportStore\SportStore\obj\Debug\SportStore.csprojRes
 C:\Users\georg\source\repos\SportStore\SportStore\obj\Debug\SportStore.csproj.CoreCompileInputs.cache
 C:\Users\georg\source\repos\SportStore\SportStore\obj\Debug\SportStore.dll
 C:\Users\georg\source\repos\SportStore\SportStore\obj\Debug\SportStore.pdb
+C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\SportStore.dll.config
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\SportStore.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\SportStore.pdb
@@ -116,9 +118,7 @@ C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\es\System.Web.M
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\es\System.Web.Http.resources.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\bin\es\System.Web.Http.WebHost.resources.dll
-C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csprojResolveAssemblyReference.cache
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csproj.CoreCompileInputs.cache
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.dll
 C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.pdb
-C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\georg\source\repos\SportStore\SportStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\georg\source\repos\SportStore\sportStore\SportStore\obj\Debug\SportStore.csprojResolveAssemblyReference.cache

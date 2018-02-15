@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace SportStore.Models
 {
-    internal class ProductDbInitializer : DropCreateDatabaseAlways<ProductDBContext>
+    internal class ProductDbInitializer : CreateDatabaseIfNotExists<ProductDBContext>
     {
         protected override void Seed(ProductDBContext context)
         {
